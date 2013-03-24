@@ -55,6 +55,22 @@
     .description {
       font-size: small;
     }
+    footer {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      font-size: small;
+      color: #555;
+    }
+    @media (max-height: 420px) {
+      footer {
+        position: static;
+      }
+    }
+    footer a {
+      color: #555;
+    }
   </style>
 </head>
 <body>
@@ -78,11 +94,21 @@
         <a href="https://soundcloud.com/takone">Sons</a>
       </li>
       <li>
+        <img class="service-logo" src="img/playlist.png" />
+        <a href="https://docs.google.com/spreadsheet/pub?key=0Amq3qYi2cyKQdFZBdWVSWGFqc2o2SGRTV1ZuYzNnVWc&single=true&gid=1&output=html">Playlist</a>
+      </li>
+      <li>
         <img class="service-logo" src="img/calendar.png">
         <a href="http://takone.us4.list-manage.com/subscribe?u=d465fbfeb445a542baf67528d&amp;id=876d5c7682">Prochains concerts (Abonnement)</a>
       </li>
     </ul>
   </div>
+  <footer>
+    <a href="http://www.romain-hennequin.fr/">Romain Hennequin (Guitare)</a> |
+    <a href="http://rpechayr.wordpress.com/">Romain Pechayre (Batterie)</a> |
+    <a href="http://saunier.me">Sébastien Saunier (Basse, Clavier)</a> |
+    <a href="http://www.linkedin.com/pub/paul-theis/39/6b9/994">Paul Theis</a> (Chant)
+  </footer>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27925417-1']);
