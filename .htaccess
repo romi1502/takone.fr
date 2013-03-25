@@ -9,3 +9,7 @@ RewriteRule (.*) $1 [L]
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/$
 RewriteRule  (.+) / [L,R=301]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^takone.fr
+RewriteRule (.*) http://www.takone.fr [R=301,L]
